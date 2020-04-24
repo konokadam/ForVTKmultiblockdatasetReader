@@ -67,7 +67,6 @@ module xml_data_multiblockdataset
         procedure :: close => close_Block
     end type Block_type
 
-
     type vtkMultiBlockDataSet_type
         type(Block_DataSet_container_type), dimension(:), allocatable :: item
     end type vtkMultiBlockDataSet_type
@@ -115,7 +114,6 @@ contains
 
         call dvar(newsize)%p%input(info, tag, endtag, attribs, noattribs, data, nodata, &
              has_dvar )
-
 
         end subroutine read_xml_type_Block_DataSet_container_type_array
 
