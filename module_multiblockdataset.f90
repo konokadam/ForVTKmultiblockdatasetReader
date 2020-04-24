@@ -437,7 +437,7 @@ contains
 
         end subroutine read_xml_type_vtkMultiBlockDataSet_type
 
-        subroutine read_xml_file_multiblockdataset_okuyucu(vtkMultiBlockDataSet, fname, lurep, errout)
+        subroutine read_xml_file_multiblockdataset_reader(vtkMultiBlockDataSet, fname, lurep, errout)
             type(vtkMultiBlockDataSet_type) :: vtkMultiBlockDataSet
             character(len=*), intent(in)           :: fname
             integer, intent(in), optional          :: lurep
@@ -579,7 +579,7 @@ contains
 
         end subroutine
 
-        subroutine vtkMultiBlockDataSet_yaz(vtkMultiBlockDataSet, dosya)
+        subroutine write_vtkMultiBlockDataSet(vtkMultiBlockDataSet, dosya)
 
            type(vtkMultiBlockDataSet_type), intent(inout) :: vtkMultiBlockDataSet
            character(*), intent(in) :: dosya
