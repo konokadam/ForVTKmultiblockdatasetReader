@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<VTKFile type="vtkMultiBlockDataSet" version="1.0" byte_order="LittleEndian" header_type="UInt64">
+  <vtkMultiBlockDataSet>
+    <Block name="test">
+      <Block name="subblock1">
+        <DataSet name="dataset1" file="file1.vtu"></DataSet>
+      </Block>
+      <Block name="subblock2">
+        <DataSet name="dataset2" file="file2.vtu"></DataSet>
+        <DataSet name="dataset3" file="file3.vtu"></DataSet>
+        <DataSet name="dataset4" file="file4.vtu"></DataSet>
+      </Block>
+      <Block name="subblock3">
+        <DataSet name="dataset4" file="file4.vtu"></DataSet>
+        <Block name="subblock4">
+          <DataSet name="dataset5" file="file5.vtu"></DataSet>
+          <DataSet name="dataset6" file="file6.vtu"></DataSet>
+        </Block>
+      </Block>
+    </Block>
+  </vtkMultiBlockDataSet>
+</VTKFile>
