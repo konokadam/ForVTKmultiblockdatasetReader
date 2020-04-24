@@ -578,7 +578,6 @@ contains
         call item%p%open(index, u)
         call item%p%close(u)
 
-
     end subroutine
 
     subroutine write_vtkMultiBlockDataSet(vtkMultiBlockDataSet, dosya)
