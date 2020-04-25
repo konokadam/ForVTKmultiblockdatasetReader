@@ -569,7 +569,8 @@ contains
         if ( present(errout) ) errout = error
     end subroutine
 
-    recursive subroutine traverse_block(item, index, u)
+    !!!Just example: Write the file again
+    subroutine traverse_block(item, index, u)
 
         type(Block_DataSet_container_type), intent(inout) :: item
         integer, intent(in) :: index
