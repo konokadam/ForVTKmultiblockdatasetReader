@@ -75,12 +75,12 @@ module xml_data_multiblockdataset
 
 contains
 
-    subroutine allocate_to_Block_or_DataSet(dvar, tip)
+    subroutine allocate_to_Block_or_DataSet(dvar, type)
 
         class(block_dataset_abstract_type), pointer, intent(inout) :: dvar
-        character(*), intent(in) :: tip
+        character(*), intent(in) :: type
 
-        select case(tip)
+        select case(type)
             case("Block")
                 allocate(Block_type :: dvar)
             case("DataSet")
