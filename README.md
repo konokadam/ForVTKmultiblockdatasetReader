@@ -1,4 +1,4 @@
-# vtk_multiblockdataset_reader
+# ForVTKmultiblockdatasetReader
 
 This is pure Fortran code for reading vtk multiblock dataset (.vtm) files (only vtm file not the dataset files (model files)).
 
