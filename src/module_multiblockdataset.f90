@@ -1,3 +1,4 @@
+!!!Generated using xml-fortran and changed to make object oriented style by H.E.Konokman
 module xml_data_multiblockdataset
     use READ_XML_PRIMITIVES
     use XMLPARSE
